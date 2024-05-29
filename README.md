@@ -35,3 +35,7 @@ SELECT *
 FROM incidents
 WHERE incident_type = 'Vandalism';
 ```
+### Хранимая процедура:
+```
+CALL CheckPatrolsSentToIncidents();
+```
