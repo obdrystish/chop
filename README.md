@@ -1,6 +1,6 @@
 ![hpo](https://github.com/obdrystish/chop/assets/120009426/5496f86d-f5b6-4316-8c55-86c560113ce7)
 
-h1 Типовые запросы:
+**Типовые запросы:**
 ### 1. Получение списка всех клиентов:
 ```sql
 SELECT * FROM clients;
