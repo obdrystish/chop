@@ -35,7 +35,21 @@ SELECT *
 FROM incidents
 WHERE incident_type = 'Vandalism';
 ```
+
 ### Хранимая процедура:
 ```
 CALL CheckPatrolsSentToIncidents();
 ```
+Эта процедура проверяет, был ли хотя бы один патруль отправлен на инцидент.
+
+### Представление 
+```
+SELECT * FROM IncidentDetails;
+```
+В данном представлении IncidentDetails мы объединяем данные из таблиц incidents, clients, employees, locations и patrols, чтобы предоставить информацию о деталях инцидентов в одном удобном представлении.
+
+### Функция
+```
+SELECT CountSentPatrols() AS SentPatrolsCount;
+```
+Подсчитывает общее количество отправленных патрулей
